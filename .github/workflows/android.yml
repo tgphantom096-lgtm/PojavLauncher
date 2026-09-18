@@ -36,7 +36,8 @@ jobs:
 
       - name: Get JRE 8
         uses: dawidd6/action-download-artifact@v9
-        with:
+        with: repo: PojavLauncherTeam/android-openjdk-build-multiarch
+          allow_forks: true
           workflow: build.yml
           path: app_pojavlauncher/src/main/assets/components/jre
           workflow_conclusion: success
